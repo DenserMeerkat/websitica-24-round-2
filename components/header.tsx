@@ -17,14 +17,14 @@ const Header = () => {
           },
         },
       }}
-      className="h-32 bg-gradient-to-b from-white from-60%"
+      className="sticky top-0 z-50 h-20 bg-gradient-to-b from-white from-40% to-transparent backdrop-blur-sm"
     >
       <motion.div
         variants={FADE_DOWN_ANIMATION_VARIANTS}
         className="max-w-8xl mx-auto flex justify-between py-4"
       >
         <span className="text-2xl font-extrabold text-foreground">TRXVL</span>
-        <nav className="flex gap-4 font-medium lg:gap-8">
+        <nav className="flex gap-4 font-bold lg:gap-8">
           <a
             href="#"
             className="text-foreground underline-offset-4 transition-all hover:underline"
