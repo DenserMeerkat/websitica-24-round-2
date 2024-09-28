@@ -17,7 +17,7 @@ export function CarouselCards() {
       opts={{
         align: "start",
       }}
-      className="mx-auto mt-8 w-full max-w-7xl"
+      className="mx-auto mt-6 w-full max-w-7xl"
     >
       <CarouselContent>
         {Array.from({ length: 9 }).map((_, index) => (
@@ -25,7 +25,7 @@ export function CarouselCards() {
             key={index}
             className="max-w-sm md:basis-1/2 lg:basis-1/3"
           >
-            <div className="p-1 backdrop-blur-lg">
+            <div className="px-1 py-4 backdrop-blur-lg">
               <Card className="bg-gradient-to-t from-white to-white/80 drop-shadow-xl backdrop-blur-lg">
                 <CardContent className="flex select-none flex-col items-center justify-center p-3">
                   <div className="relative aspect-video overflow-hidden rounded-xl">

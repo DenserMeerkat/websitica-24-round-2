@@ -1,7 +1,6 @@
 import React from "react";
 import { Calendar, SearchIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
 import { FADE_UP_ANIMATION_VARIANTS } from "@/lib/utils";
 
@@ -27,7 +26,7 @@ const Search = () => {
       >
         <div className="flex items-center gap-0 border-none dark:border-none">
           <SearchIcon className="opacity-80" />
-          <Input className="min-w-[500px]" />
+          <input className="ml-4 h-8 border-none bg-transparent focus:ring-0 focus:ring-offset-0 lg:min-w-[500px]" />
         </div>
         <div className="flex gap-8 opacity-80">
           <Button variant="ghost">
