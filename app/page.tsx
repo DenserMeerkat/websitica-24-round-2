@@ -6,6 +6,7 @@ import Search from "./search";
 import { CarouselHeading, CarouselCards } from "./carousel";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
+import Categories from "./categories";
 
 export default function Home() {
   return (
@@ -13,18 +14,19 @@ export default function Home() {
       <Header />
       <Hero />
       <Search />
+      <Categories />
       <motion.div
-        initial={{ opacity: 0, y: 500 }}
+        initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1, delay: 1, type: "spring" }}
       >
         <CarouselHeading heading={"Most Popular"} />
         <CarouselCards />
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, y: 500 }}
+        initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1, delay: 1, type: "spring" }}
       >
         <CarouselHeading heading={"Recently Viewed"} />
         <CarouselCards />
@@ -32,7 +34,7 @@ export default function Home() {
       <motion.div
         initial={{ opacity: 0, y: 200 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1, delay: 1, type: "spring" }}
       >
         <CarouselHeading heading={"Holiday Destinations"} />
         <CarouselCards />
